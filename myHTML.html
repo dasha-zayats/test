@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <style>
+
+
+ label{display:inline-block;
+ 	   width:18%;
+ 	   margin: 0px;	
+ }	
+ p{
+ 	display:inline-block;
+ 	   margin: 0px;
+ }
+ input,select{
+ 	font-size:30px;
+ 	font-family: Times New Roman;	
+ }
+ div{width:100%;
+ margin-bottom: 5px;
+ font-size:30px;	
+ }
+ textarea{width: 95%;
+ }  
+
+@media screen and (max-width: 500px) {
+ label{display:block;}
+ #check{display: inline}  
+ }
+
+</style>
+  </head>
+<body> 
+
+	<div style="padding:10px">
+    <div>Для публикации вашей статьи, заполните пожалуйста следующую форму:</div>
+
+      <form action="" method="get">
+         <div><label> Название статьи: </label>
+            <p><input type="text" value="" name="text"></p></div>
+         <div><label>Рубрика:</label>
+            <p><select name="select"size="1">
+  				<option value="programming">программирование</option>
+  				<option value="economic">экономика</option>
+  				<option value="politic">политика</option></select></p></div>
+    	 <div><label>Публикация:</label>
+ 			<p><input type="radio" name="radio" value="website" >на сайте</p>
+     		<p><input type="radio" name="radio" value="magazine">в журнале</p>
+ 			<p><input type="radio" name="radio" value="both">на сайте и в журнале</p></div>	
+         <div><label id="check">Разрешить комментарии:</label>
+ 			<p><input type="checkbox" name="checkbox" value="ok" checked></p></div>
+         <div><label>Текст статьи:</label></div>
+         <div><p style="width: 100%;"><textarea name="bigText" spellcheck="true" autocomplete="on"></textarea></p></div>
+         <input type="submit" value="опубликовать">
+</form>	
+	</div>
+</body>
+</html>
